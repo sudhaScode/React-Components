@@ -70,21 +70,21 @@ const resetHandler =()=>{
           <div className="input-group">
             <p>
                <label htmlFor = "current-savings">CURRENT SAVINGS($)</label>
-               <input value = {userInput.currentSavings} type="number" id = "currentSavings"  min = "1" onChange = {(event)=>{inputHandler(event.target.id, event.target.value)} } ></input>
+               <input type="number" id = "currentSavings"  min = "1" onChange = {(event)=>{inputHandler(event.target.id, event.target.value)} } ></input>
             </p>
             <p>
               <label htmlFor = "yearly-savings">YEARLY SAVINGS($)</label>
-              <input value ={userInput.yearlySavings} type="number" id = "yearlySavings"  min = "1" onChange = {(event)=>{inputHandler(event.target.id, event.target.value)}}></input>
+              <input  type="number" id = "yearlySavings"  min = "1" onChange = {(event)=>{inputHandler(event.target.id, event.target.value)}}></input>
             </p>
           </div>
           <div className="input-group">
             <p>
               <label htmlFor = "epected-interest">EXPECTED INTEREST(%, PER YEAR)</label>
-              <input value= {userInput.expectedIntrest} type="number" id = "expectedIntrest"  min = "1" onChange = {(event)=>{inputHandler(event.target.id, event.target.value)}}></input>
+              <input  type="number" id = "expectedIntrest"  min = "1" onChange = {(event)=>{inputHandler(event.target.id, event.target.value)}}></input>
             </p>
             <p>
               <label htmlFor = "investment-duration">INVESTMENT DURATION(IN YEARS)</label>
-              <input value = {userInput.investmentDuration} type="number" id = "investmentDuration"  min = "1" onChange = {(event)=>{inputHandler(event.target.id, event.target.value)}}></input>
+              <input type="number" id = "investmentDuration"  min = "1" onChange = {(event)=>{inputHandler(event.target.id, event.target.value)}}></input>
             </p> 
           </div>
           <p className="actions">
